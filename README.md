@@ -14,6 +14,27 @@
 
 ## Overview
 
+## Key Highlights
 
+
+
+
+## Main Results
+
+
+## Repository Structure
+
+
+## Citation
+
+If you find this work useful, please cite:
+
+
+```
+
+## License
+
+- **Code** (`inference/`): MIT License — see [LICENSE](LICENSE).
+- **Dataset** (HuggingFace `ZBox008003/AFTraj`): CC BY 4.0.
 
 <div align="center"><img src="pipeline.png" width="92%"></div>
