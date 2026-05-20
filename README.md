@@ -28,11 +28,6 @@ To further capture **local abnormalities** that may not be reflected by global r
 <div align="center"><img src="framework.png" width="92%"></div>
 
 
-## Key Highlights
-
-
-
-
 ## Main Results
 
 
