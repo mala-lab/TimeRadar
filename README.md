@@ -4,7 +4,7 @@
 
 ## TimeRadar: A Domain-Rotatable Foundation Model for Time Series Anomaly Detection
 
-[![arXiv](https://img.shields.io/badge/arXiv-2602.19068)](https://arxiv.org/abs/2602.19068)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.19068-b31b1b)](https://arxiv.org/abs/2602.19068)
 [![Project Page](https://img.shields.io/badge/Project_Page-website-blue)]()
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
