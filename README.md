@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo_full.png" width="360">
+<img src="logo_full.png" width="260">
 
 ## TimeRadar: A Domain-Rotatable Foundation Model for Time Series Anomaly Detection
 
