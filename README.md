@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo_full.png" width="260">
+<img src="figures/logo_full.png" width="260">
 
 ## TimeRadar: A Domain-Rotatable Foundation Model for Time Series Anomaly Detection
 
@@ -20,7 +20,7 @@ We introduce **TimeRadar**, an innovative time series foundation model (TSFM) bu
 
 
 
-<div align="center"><img src="framework.png" width="92%"></div>
+<div align="center"><img src="figures/framework.png" width="92%"></div>
 
 
 ## Main Results
