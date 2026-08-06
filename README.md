@@ -73,7 +73,7 @@ bash ./scripts/anomaly_detection/MSL.sh
 
 We also provide a ready-to-use pretrained TimeRadar model under [`./TimeRadar`](./TimeRadar), packaged in the Hugging Face custom-model format similarly to [`./DADA`](./DADA). It can be loaded directly with `AutoModel.from_pretrained(..., trust_remote_code=True)`; see the [model README](./TimeRadar/README.md) for details.
 
-### Evaluating Other Foundation Models
+### 🤖 Evaluating Other Foundation Models
 
 To evaluate other advanced foundation models such as Chronos-Bolt, download the corresponding pretrained weights and place them under the local path expected by the implementation (for Chronos-Bolt, `./models/chronos/chronos-bolt-base`). Use the anomaly-detection scripts above and replace the task and model arguments with:
 
