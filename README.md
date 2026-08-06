@@ -61,37 +61,7 @@ The resulting checkpoint is saved under `./checkpoints`.
 
 ## 🔥 Few-shot Fine-tuning
 
-Few-shot fine-tuning uses a small percentage of labeled training data from a target dataset. Set `--is_training 0`, `--is_finetuning 1`, and `--is_zeroshot 0`. For example, the following command fine-tunes TimeRadar on 5% of MSL:
-
-```bash
-CUDA_VISIBLE_DEVICES=0 torchrun --nnodes=1 --nproc_per_node=1 --master_port=29512 run.py \
-  --task_name anomaly_detection_timeradar \
-  --is_training 0 \
-  --is_finetuning 1 \
-  --is_zeroshot 0 \
-  --root_path ./dataset/evaluation_dataset \
-  --data MSL \
-  --model TimeRadar \
-  --seq_len 100 \
-  --pred_len 100 \
-  --patch_len 5 \
-  --stride 100 \
-  --percentage 0.05 \
-  --finetune_epochs 20 \
-  --train_epochs 20 \
-  --batch_size 32 \
-  --des few_shot \
-  --metric auc \
-  --norm 1 \
-  --use_multi_gpu \
-  --learning_rate 1e-4 \
-  --num_workers 10 \
-  --patience 6 \
-  --t $(seq 0.001 0.001 0.030) \
-  --itr 1 > logs/Anomaly_Detection/TimeRadar_MSL_100_100_100_auc_is_fewshot.log
-```
-
-Change `--percentage` to evaluate another few-shot setting.
+Few-shot fine-tuning uses a small percentage of labeled training data from a target dataset. Set `--is_training 0`, `--is_finetuning 1`, and `--is_zeroshot 0`. Change `--percentage` to evaluate another few-shot setting.
 
 ## 🧊 Zero-shot Evaluation
 
