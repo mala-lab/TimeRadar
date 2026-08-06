@@ -1,0 +1,21 @@
+{
+  "anomaly_score_weight": 1.0,
+  "architectures": [
+    "TimeRadarForAnomalyDetection"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_timeradar.TimeRadarConfig",
+    "AutoModel": "modeling_timeradar.TimeRadarForAnomalyDetection"
+  },
+  "copies": 10,
+  "d_model": 256,
+  "depth": 10,
+  "hidden_dim": 64,
+  "mask_mode": "c",
+  "model_type": "timeradar",
+  "norm": false,
+  "patch_len": 5,
+  "seq_len": 100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.40.1"
+}
