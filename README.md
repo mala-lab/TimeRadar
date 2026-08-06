@@ -23,7 +23,7 @@ We introduce **TimeRadar**, an innovative time series foundation model (TSFM) bu
 
 ## 📚 Data Preparation
 
-The datasets can be downloaded from the following link [Google Drive](https://drive.google.com/file/d/1QumS8bSRsLZT7u5TWLaWctDWvGnSyeRB/view?usp=drive_link)
+The datasets can be downloaded from the following link [Google Drive](https://drive.google.com/drive/folders/12SGOHAyOcJv-crORAM0NLOf7-JM73R3s?usp=drive_link)
 
 Place the extracted **Monash+** and **evaluation_dataset** directories under `./dataset`:
 
