@@ -78,6 +78,7 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nnodes=1 --nproc_per_node=1 --master_port=2951
   --stride 100 \
   --percentage 0.05 \
   --finetune_epochs 20 \
+  --train_epochs 20 \
   --batch_size 32 \
   --des few_shot \
   --metric auc \
