@@ -417,14 +417,24 @@ class Exp_Anomaly_Detection_TimeRadar(Exp_Basic):
                 batch_x = batch_x.float().to(self.device)
                 # score = self.model.module.infer(batch_x, norm=self.args.norm)
                 repr, out_copies = self.model(batch_x, norm=self.args.norm)
-                score = self.model.module.cal_anomaly_score(batch_x=batch_x, batch_out_copies=out_copies, anomaly_criterion=criterion)
+                score = self.model.module.cal_anomaly_score(
+                    batch_x=batch_x,
+                    batch_out_copies=out_copies,
+                    anomaly_criterion=criterion,
+                    L=self.args.L,
+                )
                 score = score.detach().cpu().numpy()
                 init_scores.append(score)
             for i, (batch_x, batch_y) in enumerate(test_loader):
                 batch_x = batch_x.float().to(self.device)
                 # score, repr = self.model.module.infer(batch_x, norm=self.args.norm, return_repr=True)
                 repr, out_copies = self.model(batch_x, norm=self.args.norm)
-                score = self.model.module.cal_anomaly_score(batch_x=batch_x, batch_out_copies=out_copies, anomaly_criterion=criterion)
+                score = self.model.module.cal_anomaly_score(
+                    batch_x=batch_x,
+                    batch_out_copies=out_copies,
+                    anomaly_criterion=criterion,
+                    L=self.args.L,
+                )
                 
                 score = score.detach().cpu().numpy()
                 test_scores.append(score)
