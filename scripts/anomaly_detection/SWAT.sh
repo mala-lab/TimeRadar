@@ -36,7 +36,7 @@ torchrun --nnodes=1 --nproc_per_node=1 --master_port=29511 run.py \
     --des zero_shot \
     --metric $metric \
     --norm 0 \
-    --L 1 \
+    --L 0 \
     --use_gpu True \
     --gpu 0 \
     --use_multi_gpu \
