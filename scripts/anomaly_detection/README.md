@@ -1,0 +1,3 @@
+## Anomaly-score coefficient
+
+When calculating the anomaly score, we use **Confidence-guided Score Correction** to reduce potentially overestimated abnormality: if the reconstruction-error distribution satisfies **μ < 0.1** and **σ < 0.05**, the coefficient `L` is increased from **1** to **2** for correction; otherwise, it remains **1**. The coefficient `L` can also be selected from **0.1 to 3.0** through parameter search.
